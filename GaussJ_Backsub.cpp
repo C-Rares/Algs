@@ -8,17 +8,14 @@ the existing zeros below the main diagonal, and only then we start making matrix
 
     "n" is the size of the matrix
     "A" is the coefficient matrix 
-    "B" is the matrix containing the right handside vector (can solve for multiple right handsides)
+    "B" is the matrix containing the right handside vector (You can solve for multiple right handsides)
 */
 
 void GaussJ(int n, double A[100][100], double B[100])
 {
-    int ln;
     double big, auxPiv, line_nr, nr, X[100] = {0};
     
     for(int p = 0; p < n; p++)
-    {
-        ln = -1;
         if(!A[p][p])
             for(int i = 0; i < n; i++)
                 if(i != p)
@@ -30,7 +27,6 @@ void GaussJ(int n, double A[100][100], double B[100])
                         swap(B[p], B[i]);
                         break;
                     }
-    }
 
     for(int ln = 0; ln < n; ln++)
         for(int i = ln + 1; i < n; i++)
