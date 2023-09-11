@@ -43,7 +43,7 @@ void GaussJ(int n, int m, double A[100][100], double B[100][100])
         is_piv[jpiv] = 1;
 
         if(!A[jpiv][jpiv])
-            throw("system either inconsisten or dependent");
+            throw("system either inconsistent or dependent");
 
         auxPiv = A[jpiv][jpiv];
         A[jpiv][jpiv] = 1;
