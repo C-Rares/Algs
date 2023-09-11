@@ -8,7 +8,7 @@ the existing zeros below the main diagonal, and only then we start making matrix
 
     "n" is the size of the matrix
     "A" is the coefficient matrix 
-    "B" is the matrix containing the right handside vector (You can solve for multiple right handsides)
+    "B" is the matrix containing the right handside vector (can solve for multiple right handsides)
 */
 
 void GaussJ(int n, double A[100][100], double B[100])
